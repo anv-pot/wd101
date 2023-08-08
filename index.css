@@ -1,0 +1,8 @@
+// Inside the form submission listener
+const today = new Date();
+const dobDate = new Date(dob);
+const age = today.getFullYear() - dobDate.getFullYear();
+if (age < 18 || age > 55) {
+  messageElement.textContent = "Please enter a valid date of birth (age must be between 18 and 55).";
+  return;
+}
